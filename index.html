@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veloraxx — Minecraft Development &amp; Server Configuration</title>
+  <meta name="description" content="Portfolio of Veloraxx, a junior Java developer focused on Minecraft server configuration, custom interfaces and Paper plugin development.">
+  <meta name="theme-color" content="#080e18">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Veloraxx — Minecraft Development &amp; Server Configuration">
+  <meta property="og:description" content="Custom Minecraft interfaces, resource-pack integrations and Java/Paper plugins. Explore VeloraxxMC and FancyNpcsGUI.">
+  <meta property="og:url" content="https://veloraxxx.github.io/">
+  <meta property="og:image" content="https://veloraxxx.github.io/assets/images/TAB.png">
+  <meta property="og:image:alt" content="VeloraxxMC custom tab list with rank icons and server branding">
+  <link rel="canonical" href="https://veloraxxx.github.io/">
+  <link rel="icon" type="image/png" href="assets/icons/vmc_scoreboard.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="github-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.2.8-.5v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.6-1.3-1.6-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.2.7-1.4-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.9 1.2 3.2 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2V22c0 .3.2.6.8.5A11.1 11.1 0 0 0 12 .9Z"/></symbol>
+    <symbol id="arrow-icon" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="expand-icon" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></symbol>
+    <symbol id="play-icon" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="m8 4 13 8-13 8Z"/></symbol>
+    <symbol id="close-icon" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="wordmark" href="#main"><img src="assets/icons/vmc_scoreboard.png" width="34" height="34" alt="">Veloraxx<span class="wordmark-dot">.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#work">Work</a><a href="#fancynpcsgui">FancyNpcsGUI</a><a href="#skills">Skills</a><a href="#about">About</a>
+        <a class="nav-github" href="https://github.com/veloraxxx" target="_blank" rel="noopener noreferrer" aria-label="Veloraxx on GitHub"><svg><use href="#github-icon"/></svg><span>GitHub</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Minecraft Server Configuration &amp; Plugin Development</p>
+        <h1 id="hero-title">Veloraxx<span>.</span></h1>
+        <p class="hero-role">Junior Java Developer</p>
+        <p class="hero-description">I work on Minecraft server setups, custom interfaces and Paper plugins.</p>
+        <div class="actions"><a class="button primary" href="#work">View Work<svg><use href="#arrow-icon"/></svg></a><a class="button" href="https://github.com/veloraxxx" target="_blank" rel="noopener noreferrer"><svg><use href="#github-icon"/></svg>GitHub</a></div>
+      </div>
+      <div class="hero-art"><img src="assets/icons/server_icon.png" width="256" height="180" alt="VeloraxxMC blue and silver server logo"></div>
+    </section>
+
+    <section id="work" class="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Server configuration showcase</p><h2 id="work-title">VeloraxxMC</h2></div>
+        <p>VeloraxxMC is my Minecraft test server and configuration showcase. I use it to build and test menus, ranks, rewards and resource-pack integrations.</p>
+      </div>
+      <ul class="tags overview-tags" aria-label="VeloraxxMC technologies"><li>Paper</li><li>TAB</li><li>LuckPerms</li><li>PlaceholderAPI</li><li>DeluxeMenus</li><li>Resource Packs</li></ul>
+
+      <article class="tab-showcase showcase reveal">
+        <div class="showcase-heading"><div><span class="index">01 / TAB &amp; RANK SORTING</span><h3>Custom TAB</h3></div><p>Rank sorting, player information and custom glyphs, styled for VeloraxxMC.</p></div>
+        <button class="image-viewer tab-image" data-lightbox aria-label="Enlarge the custom TAB screenshot"><img src="assets/images/TAB.png" width="1784" height="1105" alt="VMC tab list with the VeloraxxMC logo, staff and player ranks, ping and server information"><span class="expand-label"><svg><use href="#expand-icon"/></svg>View full image</span></button>
+        <div class="media-footer"><ul class="tags"><li>TAB</li><li>LuckPerms</li><li>PlaceholderAPI</li><li>Resource Pack</li></ul><p class="note">Tab-list players shown in this showcase are simulated for demonstration purposes.</p></div>
+      </article>
+
+      <div class="identity-layout">
+        <article class="scoreboard-showcase showcase reveal">
+          <span class="index">02 / PLAYER STATISTICS</span><h3>Custom Scoreboard</h3>
+          <p>Player stats and balances from TAB, PlaceholderAPI and Vault, with custom icons.</p>
+          <button class="image-viewer scoreboard-image" data-lightbox aria-label="Enlarge the custom scoreboard screenshot"><img src="assets/images/scoreboard.png" width="258" height="356" loading="lazy" alt="VMC scoreboard displaying rank, ping, economy, kills, deaths and playtime"><span class="expand-label"><svg><use href="#expand-icon"/></svg></span></button>
+          <ul class="tags"><li>TAB</li><li>PlaceholderAPI</li><li>Vault</li><li>Resource Pack</li></ul>
+        </article>
+        <article class="ranks-showcase showcase reveal">
+          <span class="index">03 / RANKS &amp; PREFIXES</span><h3>Ranks &amp; Chat</h3>
+          <p>Staff and player prefixes with matching rank icons across chat and menus.</p>
+          <div class="rank-images">
+            <figure><figcaption>Staff hierarchy</figcaption><button class="image-viewer" data-lightbox aria-label="Enlarge staff ranks"><img src="assets/images/staff_ranks.png" width="409" height="221" loading="lazy" alt="Eight staff ranks with original crown, shield and star glyphs, from Owner to Helper"><span class="expand-label"><svg><use href="#expand-icon"/></svg></span></button></figure>
+            <figure><figcaption>Player ranks</figcaption><button class="image-viewer" data-lightbox aria-label="Enlarge player ranks"><img src="assets/images/paid_ranks.png" width="348" height="135" loading="lazy" alt="Apex, Mythic, Elite, Prime and Member rank prefixes in their distinct colors"><span class="expand-label"><svg><use href="#expand-icon"/></svg></span></button></figure>
+          </div>
+          <ul class="tags"><li>LuckPerms</li><li>Chat</li><li>Resource Pack</li></ul>
+        </article>
+      </div>
+
+      <article class="asset-showcase showcase reveal">
+        <div class="asset-copy"><span class="index">04 / RESOURCE-PACK ASSETS</span><h3>Resource Pack &amp; Custom UI</h3><p>Font glyphs and item models used across menus, chat and player information.</p><ul class="tags"><li>Resource Packs</li><li>JSON</li><li>Custom Items</li><li>Font Glyphs</li></ul></div>
+        <div class="asset-grid" aria-label="Original VeloraxxMC resource-pack assets">
+          <figure class="logo-asset"><img src="assets/icons/server_icon.png" width="256" height="180" loading="lazy" alt="VeloraxxMC server logo"><figcaption>Server logo</figcaption></figure>
+          <figure class="logo-asset"><img src="assets/icons/vmc_scoreboard.png" width="128" height="128" loading="lazy" alt="VMC emblem"><figcaption>VMC emblem</figcaption></figure>
+          <figure><img src="assets/icons/rank.png" width="32" height="32" loading="lazy" alt="Rank glyph"><figcaption>Rank</figcaption></figure>
+          <figure><img src="assets/icons/coins.png" width="32" height="32" loading="lazy" alt="Coins glyph"><figcaption>Coins</figcaption></figure>
+          <figure><img src="assets/icons/money.png" width="32" height="32" loading="lazy" alt="Money glyph"><figcaption>Money</figcaption></figure>
+          <figure><img src="assets/icons/online.png" width="32" height="32" loading="lazy" alt="Online players glyph"><figcaption>Online</figcaption></figure>
+          <figure><img src="assets/icons/kills.png" width="32" height="32" loading="lazy" alt="Kills glyph"><figcaption>Kills</figcaption></figure>
+          <figure><img src="assets/icons/deaths.png" width="32" height="32" loading="lazy" alt="Deaths glyph"><figcaption>Deaths</figcaption></figure>
+          <figure><img src="assets/icons/playtime.png" width="32" height="32" loading="lazy" alt="Playtime glyph"><figcaption>Playtime</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="join-showcase showcase reveal">
+        <div><span class="index">05 / JOIN &amp; LEAVE</span><h3>Join Experience</h3><p>Join and leave messages with rank prefixes and VMC branding.</p></div>
+        <button class="image-viewer join-image" data-lightbox aria-label="Enlarge join and leave messages"><img src="assets/images/join_leave_messages.png" width="690" height="78" loading="lazy" alt="Branded VeloraxxMC join and leave messages with VMC and Owner rank glyphs"><span class="expand-label"><svg><use href="#expand-icon"/></svg></span></button>
+      </article>
+
+      <article class="video-showcase showcase reveal">
+        <div class="video-copy"><span class="index">06 / DELUXEMENUS</span><h3>Custom Player Menu</h3><p>Profiles, settings, crate previews and daily rewards in one player menu.</p><ul class="tags"><li>DeluxeMenus</li><li>PlaceholderAPI</li><li>Custom Items</li></ul></div>
+        <div class="video-frame"><video id="menu-video" controls playsinline preload="none" poster="assets/images/menu-poster.jpg" width="2558" height="1440" aria-label="Custom player menu showcase"><source src="assets/videos/DeluxeMenus_Showcase.mp4" type="video/mp4">Your browser does not support embedded video. <a href="assets/videos/DeluxeMenus_Showcase.mp4">Watch the player menu showcase</a>.</video><button class="video-play" aria-label="Play the custom player menu showcase"><svg><use href="#play-icon"/></svg><span>Watch showcase <small>0:28</small></span></button></div>
+      </article>
+
+      <article class="video-showcase showcase reveal">
+        <div class="video-copy"><span class="index purple">07 / EXCELLENTCRATES</span><h3>ExcellentCrates</h3><p>Solar and Aurora crates with separate themes, reward pools, custom keys and previews.</p><ul class="tags"><li>ExcellentCrates</li><li>ItemEdit</li><li>Resource Pack</li></ul></div>
+        <div class="video-frame"><video id="crates-video" controls playsinline preload="none" poster="assets/images/crates-poster.jpg" width="2558" height="1440" aria-label="ExcellentCrates showcase"><source src="assets/videos/ExcellentCrates_Showcase.mp4" type="video/mp4">Your browser does not support embedded video. <a href="assets/videos/ExcellentCrates_Showcase.mp4">Watch the crates showcase</a>.</video><button class="video-play" aria-label="Play the ExcellentCrates showcase"><svg><use href="#play-icon"/></svg><span>Watch showcase <small>0:27</small></span></button></div>
+      </article>
+
+      <article class="video-showcase showcase reveal">
+        <div class="video-copy"><span class="index">08 / DAILY REWARDS</span><h3>Daily Rewards</h3><p>Daily claims, reward previews and streak milestones with custom icons and formatting.</p><ul class="tags"><li>Rewards</li><li>GUI</li><li>Configuration</li></ul></div>
+        <div class="video-frame"><video id="rewards-video" controls playsinline preload="none" poster="assets/images/rewards-poster.jpg" width="2558" height="1440" aria-label="Daily Rewards showcase"><source src="assets/videos/Rewards_Showcase.mp4" type="video/mp4">Your browser does not support embedded video. <a href="assets/videos/Rewards_Showcase.mp4">Watch the daily rewards showcase</a>.</video><button class="video-play" aria-label="Play the Daily Rewards showcase"><svg><use href="#play-icon"/></svg><span>Watch showcase <small>0:42</small></span></button></div>
+      </article>
+    </section>
+
+    <section id="fancynpcsgui" class="plugin-section reveal" aria-labelledby="plugin-title">
+      <div class="plugin-intro">
+        <div class="plugin-copy"><p class="eyebrow purple">Java / Paper plugin</p><h2 id="plugin-title">FancyNpcsGUI</h2><p class="plugin-subtitle">In-game NPC editor for FancyNpcs on Paper.</p>
+          <ul class="features"><li>Browse, search, create, copy and delete NPCs.</li><li>Edit appearance, skins and equipment.</li><li>Configure behaviour, position, rotation and attributes.</li><li>Manage interaction actions with permission-controlled administration.</li></ul>
+          <ul class="tags"><li>Java</li><li>Paper API</li><li>FancyNpcs API</li><li>Gradle</li></ul>
+          <div class="actions"><a class="button primary" href="https://github.com/veloraxxx/FancyNpcsGUI" target="_blank" rel="noopener noreferrer"><svg><use href="#github-icon"/></svg>GitHub<svg><use href="#arrow-icon"/></svg></a><button class="button pending" disabled>Modrinth — Pending Review</button></div>
+          <p class="compatibility"><a href="https://github.com/veloraxxx/FancyNpcsGUI/releases/tag/v1.1.0" target="_blank" rel="noopener noreferrer">Release 1.1.0</a><span>Paper 1.21.6–1.21.11 / 26.1.2 / 26.2 / 26.3<br>FancyNpcs 2.12.1 · Java 25+</span></p>
+          <p class="note">FancyNpcsGUI is an unofficial addon for FancyNpcs.</p>
+        </div>
+        <figure class="navigator"><button class="image-viewer" data-lightbox aria-label="Enlarge the FancyNpcsGUI editor navigator"><img src="assets/images/FNGui_Navigator.png" width="509" height="378" loading="lazy" alt="FancyNpcsGUI NPC editor navigator with appearance, equipment, behaviour, position, attributes and actions options"><span class="expand-label"><svg><use href="#expand-icon"/></svg>View editor</span></button><figcaption>Appearance, equipment and behaviour — edited in-game.</figcaption></figure>
+      </div>
+      <div class="video-frame plugin-video"><video id="plugin-video" controls playsinline preload="none" poster="assets/images/plugin-poster.jpg" width="2558" height="1440" aria-label="FancyNpcsGUI full showcase"><source src="assets/videos/FancyNPCS_GUI_Showcase.mp4" type="video/mp4">Your browser does not support embedded video. <a href="assets/videos/FancyNPCS_GUI_Showcase.mp4">Watch the FancyNpcsGUI showcase</a>.</video><button class="video-play" aria-label="Play the FancyNpcsGUI showcase"><svg><use href="#play-icon"/></svg><span>Watch FancyNpcsGUI in action <small>2:11</small></span></button></div>
+    </section>
+
+    <section id="skills" class="skills-section reveal" aria-labelledby="skills-title"><div class="small-heading"><p class="eyebrow">Tools I work with</p><h2 id="skills-title">Skills</h2></div><div class="skills-grid">
+      <div><h3>Development</h3><ul class="tags"><li>Java</li><li>Paper API</li><li>Gradle</li></ul></div>
+      <div><h3>Server configuration</h3><ul class="tags"><li>TAB</li><li>LuckPerms</li><li>PlaceholderAPI</li><li>DeluxeMenus</li><li>ExcellentCrates</li><li>YAML</li></ul></div>
+      <div><h3>Resource pack / UI</h3><ul class="tags"><li>Minecraft Resource Packs</li><li>Custom Item Models</li><li>Font Glyphs</li><li>JSON</li><li>UI Integration</li></ul></div>
+    </div></section>
+
+    <section id="about" class="about-section reveal" aria-labelledby="about-title"><div><p class="eyebrow">A little about me</p><h2 id="about-title">About</h2><p>I'm a junior Java developer working on Minecraft plugins and server configuration. VeloraxxMC is where I test my setups and resource-pack work. FancyNpcsGUI is my main Java project.</p></div><div class="contact"><h3>Get in touch</h3><a href="https://github.com/veloraxxx" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>veloraxxx</strong><svg><use href="#arrow-icon"/></svg></a><button id="copy-discord" type="button"><span>Discord</span><strong>veloraxxx</strong><span class="copy-label">Copy</span></button><span id="copy-status" class="sr-only" role="status"></span></div></section>
+  </main>
+
+  <footer class="wrap site-footer"><div><strong>Veloraxx</strong><span>Minecraft Server Configuration &amp; Plugin Development</span></div><a href="https://github.com/veloraxxx" target="_blank" rel="noopener noreferrer">GitHub</a><span>© <span id="year">2026</span></span></footer>
+
+  <dialog id="lightbox" aria-label="Screenshot viewer"><div class="lightbox-toolbar"><span id="lightbox-caption"></span><button id="lightbox-close" aria-label="Close screenshot viewer"><svg><use href="#close-icon"/></svg></button></div><div class="lightbox-content"><img id="lightbox-image" alt=""></div></dialog>
+</body>
+</html>
