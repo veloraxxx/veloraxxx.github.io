@@ -43,7 +43,9 @@ const videos = [...document.querySelectorAll('video')];
 videos.forEach(video => {
   const frame = video.closest('.video-frame');
   const playButton = frame.querySelector('.video-play');
+  video.controls = false;
   playButton.addEventListener('click', async () => {
+    video.controls = true;
     try {
       await video.play();
     } catch {
@@ -52,6 +54,7 @@ videos.forEach(video => {
     }
   });
   video.addEventListener('play', () => {
+    video.controls = true;
     videos.forEach(other => { if (other !== video) other.pause(); });
     frame.classList.add('started');
   });
