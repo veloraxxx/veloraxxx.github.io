@@ -37,6 +37,7 @@ h1 span{color:var(--cyan)}
 .button.primary{background:#8dddf3;color:#092032;border-color:#8dddf3}.button.primary:hover{background:#b8edfb;border-color:#b8edfb}
 .button svg{width:17px;height:17px}
 .platform-badge{display:block;flex:0 0 auto;border-radius:6px;transition:opacity .2s}.platform-badge:hover{opacity:.85}.platform-badge img{width:123px;height:42px}
+@media(min-width:768px){.platform-badge img{width:146px;height:auto}}
 h2{font-size:36px;margin:0}h3{font-size:25px;margin:10px 0 16px;letter-spacing:-.6px}
 p{margin-bottom:18px;color:var(--muted)}
 .section-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,430px);gap:48px;align-items:center;padding-top:42px;border-top:1px solid var(--border)}
